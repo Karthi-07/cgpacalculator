@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CGPA Calculator</title>
+        <script src="./calculation.js"></script>
+        <link rel="stylesheet" href="./cgpadesign.css">
+    </head>
+    <body>
+        <div class="header">
+            <p class="cgpa">CGPA Calculator</p>
+        </div>
+        <br>
+        <div class="body">
+            <div class="input-box">
+                <p style="text-align: center;">Enter the Number of Semester :-
+                <input  type="text" id="noofsem" maxlength="1"  name="no" style="width:4vw;" required title=""></p>
+                <p style="text-align: center;">
+                <input type="button"  value="submit" onclick="submit()" name="semsub" class="but1">
+                </p>
+            </div>
+         <div class="part-1">
+             <div id="nsem"></div>
+             <div id="semtable"> </div>
+         </div>
+        <div id="content"></div>
+        <div id="ans"></div>       
+      </div>
+       
+    </body>
+</html>

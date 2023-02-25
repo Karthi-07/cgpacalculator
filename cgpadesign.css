@@ -1,0 +1,46 @@
+body{
+    overflow-x: hidden;
+    background-color: aqua;
+}
+.header{
+    width: 99.8vw;
+    height: 15vh;
+    margin-top: -4.7vh;
+    margin-left: -1.5vh;
+    background-color: #00B4DB;
+}
+.cgpa{
+    font-family: 'Hanuman';
+   text-align: center;
+   text-transform: uppercase;  
+   padding: 5vh;
+   font-size: 5vh;
+}
+.input-box{
+    border: 1px solid #00B4DB;
+    box-shadow: 1px solid black;
+    margin-top: 25vh;
+    margin-left: 75vh ;
+    width: 30vw;
+}
+.input-box:hover{
+        transform: scale(1.2);
+        transition-delay: .1s;
+}
+#noofsem{
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+#but1{
+    color: khaki;
+}
+.but{
+    color: rgb(180, 179, 178);
+    size: 2vh;
+}
+.part-1{
+    display: flex;
+    justify-content: space-evenly;
+}
