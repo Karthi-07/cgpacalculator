@@ -19,7 +19,7 @@ function submit()
           count++;
           flag=1;
           var nsem=document.getElementById("nsem");
-          nsem.innerHTML+=`<div>
+          nsem.innerHTML+=`<div class=left>
            <p>Enter no of Subjects in ${count} Semester :- </p> 
            <input type=text style=width:2vw; id=semsub required>
            <input type=button onclick="semonclick(this)" id=sembut class=but1 value=submit>
@@ -94,10 +94,38 @@ function gpacal(target)
 
 function cgpa()
 {
+    var fin_cred = 0;
+    var cred_grade=0;
     var final = document.getElementById("ans");
     final.innerHTML+="<h2 style=text-align:center;>Your CGPA is <h2>";
     for(let i=0;i<credit_arr.length;i++)
     {
-        console.log(credit_arr[i]+" "+grade_arr[i]);
+        fin_cred+=parseInt(credit_arr[i]);
+        cred_grade+=parseInt(credit_arr[i])*grade(grade_arr[i]);
+        console.log(cred_grade);
     }
+    final.innerHTML+=`<h2 style=text-align:center;>${(cred_grade/fin_cred).toFixed(2)}</h2>`
+}
+function grade(fin_grade)
+{
+   var g=0;
+   switch(fin_grade)
+   {
+    case 'O':
+        g=10;
+        break;
+    case 'A+':
+         g=9;
+         break;
+    case 'A':
+         g=8;
+         break;
+    case 'B+':
+         g=7;
+         break;
+    case 'B':
+        g=6;
+        break;
+   }
+ return g;
 }
