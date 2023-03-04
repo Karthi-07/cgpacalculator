@@ -100,8 +100,8 @@ function cgpa()
     final.innerHTML+="<h2 style=text-align:center;>Your CGPA is <h2>";
     for(let i=0;i<credit_arr.length;i++)
     {
-        fin_cred+=parseInt(credit_arr[i]);
-        cred_grade+=parseInt(credit_arr[i])*grade(grade_arr[i]);
+        fin_cred+=parseFloat(credit_arr[i]);
+        cred_grade+=parseFloat(credit_arr[i])*grade(grade_arr[i]);
         console.log(cred_grade);
     }
     final.innerHTML+=`<h2 style=text-align:center;>${(cred_grade/fin_cred).toFixed(2)}</h2>`
